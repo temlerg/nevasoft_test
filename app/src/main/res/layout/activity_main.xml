@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgra"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="229dp"
+        android:layout_height="206dp"
+        android:src="@drawable/fk"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="209dp"
+        android:layout_height="121dp"
+        android:src="@drawable/file"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.564" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/Text"
+        android:layout_width="345dp"
+        android:layout_height="63dp"
+        android:text="Введите номер телефона"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.787" />
+
+    <TextView
+        android:id="@+id/tel_num"
+        style="@style/Text"
+        android:layout_width="218dp"
+        android:layout_height="36dp"
+        android:gravity="left"
+        android:text="+7"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="323dp"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/num_7"
+                style="@style/NumButton"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/num_8"
+                style="@style/NumButton"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/num_9"
+                style="@style/NumButton"
+                android:text="9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/num_4"
+                style="@style/NumButton"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/num_5"
+                style="@style/NumButton"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/num_6"
+                style="@style/NumButton"
+                android:text="6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/num_1"
+                style="@style/NumButton"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/num_2"
+                style="@style/NumButton"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/num_3"
+                style="@style/NumButton"
+                android:text="3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="136sp"
+                android:layout_height="match_parent"
+
+                android:src="@drawable/ic_res"
+                android:alpha="0.9"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+
+                android:paddingStart="20dp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/num_0"
+                style="@style/NumButton"
+                android:text="0" />
+
+            <ImageView
+                android:id="@+id/Ok"
+                android:layout_width="136sp"
+                android:layout_height="match_parent"
+
+                android:alpha="0.9"
+                android:src="@drawable/ic_ok"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+
+                android:paddingStart="20dp"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
